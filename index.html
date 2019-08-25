@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- site information -->
+        <title>Hakushi Theme</title>
+        <meta name="description" content="blog">
+        <meta name="theme-color" content="#ddd" />
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+        <!-- iOS meta tags & icons -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#ddd">
+        <meta name="apple-mobile-web-app-title" content="Hakushi Theme">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+        <!-- site manifest for PWA -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- stylesheets -->
+        <!--link rel="stylesheet" type="text/css" href="css/normalize.css"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+
+        <!-- core libraries -->
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                navigator.serviceWorker.register('js/service-worker.js');
+                });
+            }
+            </script>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                    <h1 class="title">Hakushi Theme</h1>
+                    <img src="img/android-chrome-192x192.png"/>
+                    <p class="subtitle">A theme under development. Hakushi aims to be pristine blank piece of paper waiting to capture your thoughts and ideas</p>
+                    <div class="content">
+                            <p>Wishlist of features:</p>
+                            <ul>
+                                <li>Bulma CSS framework</li>
+                                <li>Font Awesome support</li>
+                                <li>Hugo theme</li>
+                                <li>Progressive Web App</li>
+                            </ul>
+                    </div>
+            </div>
+        </section>
+        <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>
+                        <strong>Hakushi Theme</strong> by <a href="https://github.com/geksiong">GS Low</a>. The source code is licensed
+                        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+                    </p>
+                </div>
+        </footer>
+    </body>
+</!DOCTYPE>
